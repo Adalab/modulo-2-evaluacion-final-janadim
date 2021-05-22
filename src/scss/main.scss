@@ -1,2 +1,10 @@
 @import "core/variables";
 @import "core/reset";
+
+.item__ref {
+  width: 100px;
+  height: 150px;
+}
+.js-showList {
+  font-size: 25px;
+}
