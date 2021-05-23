@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap" rel="stylesheet">
     <title>Title</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
@@ -11,12 +13,17 @@
     <main> 
       <h1>Buscador de series</h1>
       <form action="#" class="js-form">
-        <input class="js-search" type="text" name="search" id="search" placeholder="E.g. Killing Eve">
-        <button type="button" class="btn">Search</button>
+        <input class="js-search" type="text" name="search" id="search" placeholder="E.g. Killing Eve" value="">
+        <button type="button" class="js-btn">Search</button>
       </form>
-      <ul class="js-showList">
-        Cargando las series
-      </ul>
+      <section class='gen-container'>
+        <div class='fav-container'>
+          <h3>My favorite TV Shows</h3>
+        </div>
+        <ul class="js-showList">
+          Cargando las series
+        </ul>
+    </section>
     </main>
    
 

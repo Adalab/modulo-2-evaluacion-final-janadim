@@ -1,10 +1,50 @@
 @import "core/variables";
 @import "core/reset";
 
-.item__ref {
-  width: 100px;
-  height: 150px;
+.item {
+  width: 200px;
+  height: 260px;
+  background-color: #16697a;
+  border: 2px solid black;
+  margin-right: 5px;
+  margin-top: 10px;
+
+  &__ref {
+    &-img {
+      width: 150px;
+      height: 200px;
+    }
+    &-name {
+      color: #db6400;
+      font-size: 18px;
+    }
+  }
 }
 .js-showList {
-  font-size: 25px;
+  color: black;
+  font-family: $font-main;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse wrap;
+  justify-content: space-evenly;
+  grid-column: 2/4;
+}
+.favorite {
+  .item {
+    background-color: #db6400;
+    border: 2px solid rgb(236, 9, 9);
+    &__ref-name {
+      color: #16697a;
+      background-color: #db6400;
+    }
+  }
+}
+.gen-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.fav-container {
+  height: 100vh;
+  background-color: brown;
+  grid-column: 1/2;
 }
