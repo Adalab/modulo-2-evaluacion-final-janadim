@@ -1,14 +1,11 @@
-// function addListenersToShows() {
-//   for (const card of showList) {
-//     card.addEventListener("click", handleFavs);
-//   }
-// }
-
 function handleFavs(event) {
-  const favoriteItem = event.target;
-  console.log(favoriteItem);
+  const favoriteItem = event.currentTarget;
+  // if (
+  //   favoriteItem.className === "item" ||
+  //   favoriteItem.className === "item favorite"
+  // ) {
+  console.log(favoriteItem.class);
   favoriteItem.classList.toggle("favorite");
-  //   console.log(event);
 }
 
-showList.addEventListener("click", handleFavs);
+// showList.addEventListener("click", handleFavs);

@@ -1,6 +1,6 @@
 function handleButton() {
   let inputValue = document.querySelector(".js-search").value;
-  fetch(`https://api.tvmaze.com/search/shows?q=${inputValue}`)
+  fetch(`//api.tvmaze.com/search/shows?q=${inputValue}`)
     .then((response) => response.json())
     .then((data) => {
       renderShows(data);
@@ -18,10 +18,18 @@ function renderShows(dataArgument) {
 
     if (shows.image === null) {
       showList.innerHTML += `<li class='item'>
-            <a href="${shows.url}" class='item__ref'><img class="item__ref-img" src="${emptyUrl}" alt="Tv Show"></img></a><h2 class="item__ref-name">${shows.name}</h2></li>`;
+            <a href="${shows.url}" class='item__ref'> 
+            <img class="item__ref-img" src="${emptyUrl}" alt="Tv Show"></img></a>
+            <h2 class="item__ref-name">${shows.name}</h2></li>`;
     } else {
       showList.innerHTML += `<li class='item'>
-            <a href="${shows.url}" class='item__ref'><img class="item__ref-img" src="${shows.image.medium}" alt="Tv Show"></img></a><h2 class="item__ref-name">${shows.name}</h2></li>`;
+            <a href="${shows.url}" class='item__ref'>
+            <img class="item__ref-img" src="${shows.image.medium}" alt="Tv Show"></img></a>
+            <h2 class="item__ref-name">${shows.name}</h2></li>`;
     }
+  }
+  showArray = document.querySelectorAll(".item");
+  for (const eachShow of showArray) {
+    eachShow.addEventListener("click", handleFavs);
   }
 }

@@ -6,8 +6,8 @@
   height: 260px;
   background-color: #16697a;
   border: 2px solid black;
-  margin-right: 5px;
-  margin-top: 10px;
+  margin-right: 20px;
+  margin-top: 50px;
 
   &__ref {
     &-img {
@@ -25,18 +25,17 @@
   font-family: $font-main;
   display: flex;
   flex-direction: row;
-  flex-flow: row-reverse wrap;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
   grid-column: 2/4;
 }
 .favorite {
-  .item {
+  background-color: #db6400;
+  border: 2px solid rgb(236, 9, 9);
+  .item__ref-name {
+    color: #16697a;
     background-color: #db6400;
-    border: 2px solid rgb(236, 9, 9);
-    &__ref-name {
-      color: #16697a;
-      background-color: #db6400;
-    }
   }
 }
 .gen-container {
