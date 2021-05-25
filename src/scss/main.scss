@@ -38,11 +38,29 @@
     background-color: #db6400;
   }
 }
+.fav-title {
+  margin: 10px;
+  font-size: 24px;
+  color: #081e22;
+  text-align: center;
+}
+.favItem {
+  width: 150px;
+  height: 210px;
+}
+.favImg {
+  width: 100px;
+  height: 150px;
+}
+.favName {
+  text-align: center;
+  font-size: 16px;
+}
 .gen-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.fav-container {
+.favContainer {
   height: 100vh;
   background-color: brown;
   grid-column: 1/2;

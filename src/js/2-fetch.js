@@ -15,14 +15,13 @@ function renderShows(dataArgument) {
   showList.innerHTML = "";
   for (let i = 0; i < dataArgument.length; i++) {
     const shows = dataArgument[i].show;
-
     if (shows.image === null) {
-      showList.innerHTML += `<li class='item'>
+      showList.innerHTML += `<li data-id = '${shows.id}' class='item'>
             <a href="${shows.url}" class='item__ref'> 
             <img class="item__ref-img" src="${emptyUrl}" alt="Tv Show"></img></a>
             <h2 class="item__ref-name">${shows.name}</h2></li>`;
     } else {
-      showList.innerHTML += `<li class='item'>
+      showList.innerHTML += `<li data-id = '${shows.id}' class='item'>
             <a href="${shows.url}" class='item__ref'>
             <img class="item__ref-img" src="${shows.image.medium}" alt="Tv Show"></img></a>
             <h2 class="item__ref-name">${shows.name}</h2></li>`;
