@@ -1,6 +1,6 @@
 
 
-!(http://beta.adalab.es/modulo-2-evaluacion-final-janadim/)
+(http://beta.adalab.es/modulo-2-evaluacion-final-janadim/)
 
 # Final Evaluation JavaScript (Adalab)
 
