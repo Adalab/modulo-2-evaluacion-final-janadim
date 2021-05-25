@@ -12,6 +12,6 @@ Implemented functions:
 
 - The website uses an external API, which I get by using AJAX (or fetch function). Every time we type something in the input field, we make a request to the external API and it sends us a filtered information related to the input.
 - Additionally, a Local Storage is implemented to store all the needed information. In case of refreshing the website, we will still keep the favorite options for further usage. 
-- We can select and unselect any time by clicking on the Tv Show item.
+- We can select and deselect any time by clicking on the Tv Show item.
 
 
