@@ -19,9 +19,6 @@ function handleFavs(event) {
     favArrayId.splice(indexRemove, 1);
     favArrayElement.splice(indexRemove, 1);
   }
-  console.log(showId);
-  console.log(favArrayId);
-  console.log(favArrayElement);
 
   setLocalStorage();
   renderFavShows(favArrayId, favArrayElement);
