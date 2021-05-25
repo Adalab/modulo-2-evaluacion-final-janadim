@@ -1,5 +1,3 @@
-(http://beta.adalab.es/modulo-2-evaluacion-final-janadim/)
-
 # Final Evaluation JavaScript (Adalab)
 
 Hey! Here I am, writing my first functional website made of **JS, Scss and HTML**.
